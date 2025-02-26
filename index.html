@@ -33,6 +33,7 @@
       </nav>
 
       <section id="main">
+        <!-- Banner tela inicial -->
         <section id="banner" style="background-color: #6abee0; color: #fff">
           <div class="inner">
             <img
@@ -66,15 +67,44 @@
           </div>
         </section>
 
+        <!-- Carrossel de Promoções (imagens) -->
+        <section id="promo-carousel">
+          <h2>Promoções &amp; Pacotes</h2>
+
+          <!-- Botão de voltar -->
+          <button class="carousel-btn promo-prev">«</button>
+
+          <!-- Container que “recorta” o excesso e segura o trilho -->
+          <div class="promo-carousel-container">
+            <!-- Trilho onde ficam todos os slides em linha -->
+            <div class="promo-carousel-track">
+              <!-- Slide 1 -->
+              <div class="promo-slide">
+                <img src="images/promos/promo1.jpg" alt="Promoção 1" />
+              </div>
+              <!-- Slide 2 -->
+              <div class="promo-slide">
+                <img src="images/promos/promo2.jpg" alt="Promoção 2" />
+              </div>
+              <!-- Slide 3 -->
+              <div class="promo-slide">
+                <img src="images/promos/promo3.jpg" alt="Promoção 3" />
+              </div>
+              <!-- Adicione quantos slides forem necessários -->
+            </div>
+          </div>
+
+          <!-- Botão de avançar -->
+          <button class="carousel-btn promo-next">»</button>
+        </section>
+
         <!-- Gallery -->
         <section id="galleries">
-          <!-- Photo Galleries -->
           <div class="gallery">
             <header class="special">
               <h2 id="momentos">Momentos</h2>
             </header>
             <div class="content">
-              <!-- Ajuste apenas os paths de imagem, se necessário -->
               <div class="media">
                 <a href="images/gestante/01.jpg">
                   <img
@@ -102,7 +132,6 @@
                   />
                 </a>
               </div>
-              <!-- (continua igual para as outras imagens) -->
               <div class="media">
                 <a href="images/gestante/02.jpg">
                   <img
@@ -185,14 +214,10 @@
         <section id="testimonials-cards">
           <h2>O que dizem nossos clientes</h2>
 
-          <!-- Botão de voltar -->
           <button class="carousel-btn prev">«</button>
 
-          <!-- Container que “recorta” o excesso e segura o trilho -->
           <div class="carousel-container">
-            <!-- Trilho onde ficam todos os cards em linha -->
             <div class="carousel-track">
-              <!-- 1. Camila Siqueira -->
               <div class="testimonial-card">
                 <div class="rating">
                   <span class="star">★</span><span class="star">★</span
@@ -206,7 +231,6 @@
                 </p>
               </div>
 
-              <!-- 2. Rafael e Bianca -->
               <div class="testimonial-card">
                 <div class="rating">
                   <span class="star">★</span><span class="star">★</span
@@ -220,7 +244,6 @@
                 </p>
               </div>
 
-              <!-- 3. Gustavo Moreira -->
               <div class="testimonial-card">
                 <div class="rating">
                   <span class="star">★</span><span class="star">★</span
@@ -234,7 +257,6 @@
                 </p>
               </div>
 
-              <!-- 4. Francine Gomes -->
               <div class="testimonial-card">
                 <div class="rating">
                   <span class="star">★</span><span class="star">★</span
@@ -248,7 +270,6 @@
                 </p>
               </div>
 
-              <!-- 5. Carla e Rodrigo -->
               <div class="testimonial-card">
                 <div class="rating">
                   <span class="star">★</span><span class="star">★</span
@@ -262,7 +283,6 @@
                 </p>
               </div>
 
-              <!-- 6. Sabrina Ferreira -->
               <div class="testimonial-card">
                 <div class="rating">
                   <span class="star">★</span><span class="star">★</span
@@ -276,7 +296,6 @@
                 </p>
               </div>
 
-              <!-- 7. Júlia Martins -->
               <div class="testimonial-card">
                 <div class="rating">
                   <span class="star">★</span><span class="star">★</span
@@ -290,7 +309,6 @@
                 </p>
               </div>
 
-              <!-- 8. Letícia Castro -->
               <div class="testimonial-card">
                 <div class="rating">
                   <span class="star">★</span><span class="star">★</span
@@ -304,7 +322,6 @@
                 </p>
               </div>
 
-              <!-- 9. Marina Amaral -->
               <div class="testimonial-card">
                 <div class="rating">
                   <span class="star">★</span><span class="star">★</span
@@ -318,7 +335,6 @@
                 </p>
               </div>
 
-              <!-- 10. Lucas e Tamires -->
               <div class="testimonial-card">
                 <div class="rating">
                   <span class="star">★</span><span class="star">★</span
@@ -334,7 +350,6 @@
             </div>
           </div>
 
-          <!-- Botão de avançar -->
           <button class="carousel-btn next">»</button>
         </section>
 
@@ -413,6 +428,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        // ----- Carrossel de Depoimentos -----
         const track = document.querySelector(".carousel-track");
         const cards = Array.from(
           document.querySelectorAll(".testimonial-card")
@@ -422,12 +438,9 @@
 
         // Exibe 4 cartões por vez
         const cardsPerView = 4;
-
-        // Cada card: 320px + 20px de margem = 340px “espaço” por card
+        // Cada card: 320px + 20px de margem = 340px por card
         const cardWidth = 320 + 20;
         let currentIndex = 0;
-
-        // total de blocos (páginas) é o total de cards / cardsPerView
         const totalBlocks = Math.ceil(cards.length / cardsPerView);
 
         function updateCarousel() {
@@ -451,8 +464,45 @@
           updateCarousel();
         });
 
-        // Exibe inicialmente o “bloco” 0
         updateCarousel();
+
+        // ----- Carrossel de Promoções -----
+        const trackPromo = document.querySelector(".promo-carousel-track");
+        const slidesPromo = Array.from(
+          document.querySelectorAll(".promo-slide")
+        );
+        const prevBtnPromo = document.querySelector(".carousel-btn.promo-prev");
+        const nextBtnPromo = document.querySelector(".carousel-btn.promo-next");
+
+        // Exibe 3 slides por vez
+        const slidesPerView = 3;
+        // Cada slide: 300px de largura + 20px de margem = 320px
+        const slideWidth = 300 + 20;
+        let currentIndexPromo = 0;
+        const totalBlocksPromo = Math.ceil(slidesPromo.length / slidesPerView);
+
+        function updateCarouselPromo() {
+          const distance = currentIndexPromo * (slideWidth * slidesPerView);
+          trackPromo.style.transform = `translateX(-${distance}px)`;
+        }
+
+        prevBtnPromo.addEventListener("click", function () {
+          currentIndexPromo--;
+          if (currentIndexPromo < 0) {
+            currentIndexPromo = totalBlocksPromo - 1;
+          }
+          updateCarouselPromo();
+        });
+
+        nextBtnPromo.addEventListener("click", function () {
+          currentIndexPromo++;
+          if (currentIndexPromo >= totalBlocksPromo) {
+            currentIndexPromo = 0;
+          }
+          updateCarouselPromo();
+        });
+
+        updateCarouselPromo();
       });
     </script>
 
