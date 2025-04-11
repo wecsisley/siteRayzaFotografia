@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Rayza Fotografia</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-camera-retro" id="nav_logo"> Rayza Fotografia</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#promocoes">Promoções</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#galeria">Galeria de Fotos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Depoimentos</a>
+                </li>
+            </ul>
+            
+            <a href="https://wa.me/5521992522473?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os" target="_blank" id="phone_button">
+                <button class="btn-default">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </button>
+                Whatsapp
+            </a>
+            
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_promocao">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#promocoes">Promoções</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#galeria">Galeria de Fotos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Depoimentos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Viva a experiência
+                    <span>Rayza Fotografia</span>
+                </h1>
+
+                <p class="description">
+                    Eternize momentos únicos, crie memórias que nunca vão se perder.
+                </p>
+
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/5521992522473?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rayzafotografia_/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://web.facebook.com/rayzagomes.fotografia/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="images/logo-cinza.png">
+            </div>
+        </section>
+
+        <section id="promocoes">
+            <h2 class="section-title">Promoções</h2>
+            <h3 class="section-subtitle">Pacotes com vagas limitadas</h3>
+
+            <div id="pacotes_promocionais">
+                <div class="pacote_promocional">
+                    <div class="pacote-like">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="images/dia-das-maes/Mamae-Coelinha.jpg" class="imagem-pacote" alt="">
+
+                    <h3 class="titlo-pacote">
+                        Mamãe Coelinha
+                    </h3>
+
+                    <span class="descricao-pacote">
+                       Ensaio de dia mâes + Ensaio infantil de Páscoa.
+                    </span>
+
+                    <div class="avaliacao-pacote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(20+)</span>
+                    </div>
+
+                    <div class="preco-pacote">
+                        <h4>R$ 199,90</h4>
+                        <a href="https://wa.me/5521992522473?text=Gostaria de mais informações sobre o pacote mamãe Coelinha" target="_blank">
+                            <button class="btn-default">
+                              <i class="fa-brands fa-whatsapp"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pacote_promocional">
+                    <div class="pacote-like">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="images/dia-das-maes/Pacote-Mamae.jpg" class="imagem-pacote" alt="">
+
+                    <h3 class="titlo-pacote">
+                        Feliz dia das Mães
+                    </h3>
+
+                    <span class="descricao-pacote">
+                        Um lindo ensaio completo de dia das mães.
+                    </span>
+
+                    <div class="avaliacao-pacote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(20+)</span>
+                    </div>
+
+                    <div class="preco-pacote">
+                        <h4>R$ 169,90</h4>
+                        <a href="https://wa.me/5521992522473?text=Gostaria de mais informações sobre o ensaio de dia das mães." target="_blank">
+                            <button class="btn-default">
+                              <i class="fa-brands fa-whatsapp"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pacote_promocional">
+                    <div class="pacote-like">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="images/Gestante/Pacote-Gestante-Externo.jpg" class="imagem-pacote" alt="">
+
+                    <h3 class="titlo-pacote">
+                        Ensaio Externo
+                    </h3>
+
+                    <span class="descricao-pacote">
+                        Ensaio completo com paisagens exuberantes.
+                    </span>
+
+                    <div class="avaliacao-pacote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(20+)</span>
+                    </div>
+
+                    <div class="preco-pacote">
+                        <h4>A partir de R$ 350,00</h4>
+                        <a href="https://wa.me/5521992522473?text=Gostaria de mais informações sobre o ensaio de gestante externo" target="_blank">
+                            <button class="btn-default">
+                              <i class="fa-brands fa-whatsapp"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pacote_promocional">
+                    <div class="pacote-like">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="images/Gestante/Pacote-Gestante-Estúdio.jpg" class="imagem-pacote" alt="">
+
+                    <h3 class="title-pacote">
+                        Ensaio no estúdio
+                    </h3>
+
+                    <span class="descricao-pacote">
+                        Um lindo ensaio em nosso estúdio.
+                    </span>
+
+                    <div class="avaliacao-pacote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(20+)</span>
+                    </div>
+
+                    <div class="preco-pacote">
+                        <h4>A partir de R$ 150,90</h4>
+                        <a href="https://wa.me/5521992522473?text=Gostaria de mais informações sobre o ensaio de gestante no estúdio." target="_blank">
+                            <button class="btn-default">
+                              <i class="fa-brands fa-whatsapp"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria_fotos">
+            <h2 class="section-title">Galeria de Fotos</h2>
+          
+            <!-- Botões/abas de filtro -->
+            <div id="gallery-filter">
+              <button data-filter="all" class="filter-btn active">Todas</button>
+              <button data-filter="maes" class="filter-btn">Dia das Mães</button>
+              <button data-filter="pascoa" class="filter-btn">Páscoa</button>
+              <button data-filter="gestante" class="filter-btn">Gestante</button>
+              <button data-filter="newborn" class="filter-btn">Newborn</button>
+              <button data-filter="newborn" class="filter-btn">Acompanhamento</button>
+              <button data-filter="newborn" class="filter-btn">Evento</button>
+              <button data-filter="newborn" class="filter-btn">Chá Revelação</button>
+              <!-- Adicione quantas categorias quiser -->
+            </div>
+          
+            <!-- Container único da galeria -->
+            <div class="gallery-container">
+              <!-- Cada .gallery-item tem data-category para filtrar -->
+              <div class="gallery-item" data-category="maes">
+                <img src="images/dia-das-maes/mae1.jpg" alt="Descrição da foto 1">
+              </div>
+              <div class="gallery-item" data-category="maes">
+                <img src="images/dia-das-maes/mae2.jpg" alt="Descrição da foto 2">
+              </div>
+          
+              <div class="gallery-item" data-category="gestante">
+                <img src="images/Gestante/gestante1.jpg" alt="Descrição da foto 1">
+              </div>
+              <div class="gallery-item" data-category="gestante">
+                <img src="images/gestante/gestante2.jpg" alt="Descrição da foto 1">
+              </div>
+              <div class="gallery-item" data-category="gestante">
+                <img src="images/gestante/gestante3.jpg" alt="Descrição da foto 1">
+              </div>
+              
+              <!-- ... e assim por diante -->
+            </div>
+          </section>
+
+        <section id="testimonials">
+            <img src="images/rayza/rayza1.png" id="testimonieal_rayza" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que nossos clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="images/utils/avatar.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Thabatha Modesto
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Foi maravilhoso demais participar desse ensaio maravilhoso! Amei demais ❤️"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="images/utils/avatar2.jpg" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Thainara Braule
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Parabéns a todos pelo ótimo trabalho Sempre sou recebida com carinho, as fotos sempre muito bem editadas. Que venham mais fotos no futuro."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feedback">
+                        <img src="images/utils/avatar3.jpg" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Yres Kaile
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Eu amei todo o cuidado e o carinho da equipe vocês são MILL💕💕💕"
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feedback">
+                        <img src="images/utils/avatar4.jpg" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Maria Eduarda
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Ótimo, apaixonada pela dedicação e paciência com meu bebê, amei vocês 🤩"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/utils/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 Rayza Fotografia
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5521992522473?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/rayzafotografia_/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://web.facebook.com/rayzagomes.fotografia/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
